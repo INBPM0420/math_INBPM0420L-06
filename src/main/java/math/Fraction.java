@@ -80,8 +80,8 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction add(int n) {
-        // TODO (I4LOW6)
-        return null;
+
+        return new Fraction((n * denominator) + numerator, denominator );
     }
 
     /**
