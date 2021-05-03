@@ -252,7 +252,13 @@ public class Fraction extends Number implements Cloneable {
      */
     public Fraction reduce() {
         // TODO (HORA37)
-        return null;
+        int x = numerator;
+        int y = denominator;
+        while(x != y){
+            if(x > y) x -= y;
+            else y -= x;
+        }
+        return new Fraction(numerator/x ,denominator/x);
     }
 
     /**
